@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Test</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <h2>Login Test</h2>
+  <input id="email" type="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <div id="result"></div>
+
+  <script>
+    async function login() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const result = document.getElementById('result');
+      
+      result.innerHTML = "Attempting login with: " + email;
+      
+      try {
+        const response = await axios.post('http://127.0.0.1:5000/api/users/login', {
+          email: email,
+          password: password
+        });
+        
+        result.innerHTML += "<br>LOGIN SUCCESS:<br>" + JSON.stringify(response.data, null, 2);
+      } catch (error) {
+        result.innerHTML += "<br>LOGIN ERROR:<br>" + JSON.stringify(error.response?.data || error.message, null, 2);
+      }
+    }
+  </script>
+</body>
+</html>
