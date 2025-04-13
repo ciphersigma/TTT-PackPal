@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TTT-PackPal/static/css/main.958de5fa.css",
+    "main.js": "/TTT-PackPal/static/js/main.f611ca88.js",
+    "static/js/453.d9216642.chunk.js": "/TTT-PackPal/static/js/453.d9216642.chunk.js",
+    "index.html": "/TTT-PackPal/index.html",
+    "main.958de5fa.css.map": "/TTT-PackPal/static/css/main.958de5fa.css.map",
+    "main.f611ca88.js.map": "/TTT-PackPal/static/js/main.f611ca88.js.map",
+    "453.d9216642.chunk.js.map": "/TTT-PackPal/static/js/453.d9216642.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.958de5fa.css",
+    "static/js/main.f611ca88.js"
+  ]
+}
